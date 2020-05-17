@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+    margin: 165px auto 0;
+    width: 44.75%;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.header {
+    background-color: white;
+    padding: 40px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.header-title {
+    color: hsl(179, 62%, 43%);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.header-subtitle {
+    margin-top: 20px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+}
+
+.header-body {
+    margin-top: 20px;
+    opacity: 0.8;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: hsl(218, 22%, 67%);
+}
+
+.informations {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.informations > div {
+    color: white;
+}
+
+.subscription {
+    padding: 40px 40px;
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 8px;
+}
+
+.subscription-header {
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.subscription-price {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.price {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+}
+
+.per-month {
+    align-self: center;
+    margin-left: 15px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.subscription-detail {
+    margin-top: 10px;
+    color: white;
+    font-weight: 500;
+    opacity: 0.75;
+    margin-bottom: 30px;
+}
+
+.btn  {
+    display: block;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    text-align: center;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-signup {
+    background-color: hsl(71, 73%, 54%);
+}
+
+.details {
+    background-color: hsl(179, 62%, 43%);
+    padding: 40px 40px;
+    opacity: 0.9;
+    border-bottom-right-radius: 8px;
+}
+
+.details-title {
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.details-list {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.detail-item {
+    color: white;
+    font-size: 0.85rem;
+    line-height: 1.25rem;
+    opacity: 0.5;
+}
+
+@media(min-width: 1040px) {
+
+    .informations {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media(max-width: 1039px) {
+
+    .informations {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+}
