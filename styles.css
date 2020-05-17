@@ -11,8 +11,6 @@ body {
 }
 
 .container {
-    margin: 165px auto 0;
-    width: 44.75%;
     height: 450px;
     border-radius: 8px;
     box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
@@ -51,8 +49,6 @@ body {
 
 .informations {
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
 }
 
 .informations > div {
@@ -60,7 +56,6 @@ body {
 }
 
 .subscription {
-    padding: 40px 40px;
     background-color: hsl(179, 62%, 43%);
     border-bottom-left-radius: 8px;
 }
@@ -119,9 +114,7 @@ body {
 
 .details {
     background-color: hsl(179, 62%, 43%);
-    padding: 40px 40px;
     opacity: 0.9;
-    border-bottom-right-radius: 8px;
 }
 
 .details-title {
@@ -144,18 +137,94 @@ body {
 
 @media(min-width: 1040px) {
 
+    .container {
+        margin: 165px auto 0;
+        width: 44.75%;
+    }
+
+    .header {
+        padding: 40px;
+    }
+
+    .header-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .header-subtitle {
+        margin-top: 20px;
+        line-height: 1rem;
+        font-size: 1.15rem;
+        font-weight: 700;
+    }
+    
+    .header-body {
+        margin-top: 20px;
+        font-weight: 500;
+        line-height: 1.5rem;
+    }
+
     .informations {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
     }
-    
+
+    .subscription {
+        padding: 40px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .details {
+        padding: 40px;
+        border-bottom-right-radius: 8px;
+    }
+
 }
 
 @media(max-width: 1039px) {
 
+    .container {
+        margin: 70px auto 0;
+        width: 81.5%;
+    }
+
+    .header {
+        padding: 25px 20px 30px;
+    }
+
+    .header-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+    
+    .header-subtitle {
+        margin-top: 20px;
+        line-height: 1.35rem;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+    
+    .header-body {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 0.85rem;
+        line-height: 1.65rem;
+    }
+
     .informations {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
+    }
+
+    .subscription {
+        padding: 25px 20px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .details {
+        padding: 25px 20px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
 
 }
