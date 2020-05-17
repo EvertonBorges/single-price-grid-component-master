@@ -135,6 +135,15 @@ body {
     opacity: 0.5;
 }
 
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: hsl(179, 62%, 43%);
+    text-decoration: none;
+}
+
 @media(min-width: 1040px) {
 
     .container {
@@ -177,6 +186,11 @@ body {
     .details {
         padding: 40px;
         border-bottom-right-radius: 8px;
+    }
+
+    footer {
+        margin: 150px auto 0;
+        width: 44.75%;
     }
 
 }
@@ -225,6 +239,11 @@ body {
         padding: 25px 20px;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
+    }
+
+    footer {
+        margin: 350px auto 0;
+        width: 81.5%;
     }
 
 }
